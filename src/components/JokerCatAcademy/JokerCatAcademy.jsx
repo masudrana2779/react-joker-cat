@@ -1,3 +1,4 @@
+import { FaCat } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const JokerCatAcademy = () => {
@@ -65,6 +66,42 @@ export const JokerCatAcademy = () => {
           <div className="flex items-center space-x-4 text-xl leading-[30px]">
             <div className="tg">2</div>
             <div className="tg">Next »</div>
+          </div>
+        </div>
+        <div className="container flex justify-between">
+          <div className="pt-[14px]">
+            <img src="/img/kittencasino.png" alt="" />
+          </div>
+          <div className=" max-w-[630px] w-full  -mr-[116px]">
+            <div className="text-[42px] leading-[58px] text-white mb-[6px] acostaregular text-center">
+              CRYPTO GAMES PARTNERSHIP
+            </div>
+            <div className="flex justify-center mb-[45px]">
+              <img src="/img/logoPlus.png" alt="" />
+            </div>
+            <div className="text-white text-xl leading-[30px] mb-[30px] max-w-[503px] w-full pl-[34px]">
+              <p>
+                Use $JCAT tokens to play 3,500 slots, 400 live dealer games and
+                300 others
+              </p>
+              <p>BNB, SOL, USDT and others also available to play games</p>
+              <p>
+                Profits will fuel marketing for project + a portion will BURN
+                $Joker Cat tokens forever.
+              </p>
+              <p>This token will truly become deflationary!!!</p>
+            </div>
+            <div className="">
+              <Link
+                to={"/"}
+                className="text-white justify-center flex text-[18px] leading-[26px] font-medium  items-center space-x-2 py-2 px-5 rounded-full bg_gradient"
+              >
+                <span>
+                  <FaCat />
+                </span>
+                <span>Go to GAMES (Coming Soon)</span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
