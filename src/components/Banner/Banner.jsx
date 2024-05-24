@@ -15,17 +15,17 @@ const Banner = () => {
       </div>
       <div className="">
         <div className="pt-6">
-          <div className="text-[50px] leading-[65px] text-white uppercase text-center mb-[30px]">
+          <div className="text-[50px] leading-[65px] text-white uppercase text-center mb-[30px] acostaregular">
             JOKER CAT
           </div>
-          <div className="text-gradient text-2xl font-medium leading-[37px] mb-10">
+          <div className="text-gradient  text-center text-2xl font-medium leading-[37px] mb-10">
             I am entering my joker phase..
           </div>
 
           <div className="flex space-x-20 justify-between items-center mb-10">
             <Link
               to={"/"}
-              className="text-white uppercase flex items-center space-x-2 py-2 px-5 rounded-full bg_gradient"
+              className="text-white uppercase text-[18px] leading-[26px] font-medium flex items-center space-x-1 py-2 px-5 rounded-full bg_gradient"
             >
               <span>
                 <FaChartLine />
@@ -34,7 +34,7 @@ const Banner = () => {
             </Link>
             <Link
               to={"/"}
-              className="text-white uppercase flex items-center space-x-2 py-2 px-5 rounded-full bg_gradient"
+              className="text-white uppercase text-[18px] leading-[26px] font-medium flex items-center space-x-1 py-2 px-5 rounded-full bg_gradient"
             >
               <span>
                 <FaDollarSign />
@@ -42,7 +42,7 @@ const Banner = () => {
               <span>Buy here</span>
             </Link>
           </div>
-          <div className="text-white text-[18px] leading-7 mb-[30px] text-center">
+          <div className="text-white text-[18px] acostaregular leading-7 mb-[30px] text-center">
             contract address
           </div>
           <div className="flex justify-center">

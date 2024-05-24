@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "acostaregular";
+  src: url("acosta.woff2") format("woff2"), url("acosta.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

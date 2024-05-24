@@ -4,7 +4,7 @@ import Nav from "../../Nav/Nav";
 const Home = () => {
   return (
     <>
-      <div className="h-screen bgColor">
+      <div className="bgColor">
         <Nav />
         <Banner />
       </div>

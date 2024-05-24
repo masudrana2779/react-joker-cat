@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("/fonts/stylesheet.css");
 body {
   margin: 0;
 
@@ -15,4 +16,8 @@ body {
   background: linear-gradient(to right, #444cf9, #f5c6ca);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.acostaregular {
+  font-family: "acostaregular";
 }
