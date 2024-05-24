@@ -32,7 +32,7 @@ export const JokerCatAcademy = () => {
         <div className="text-[42px] leading-[58px] text-white mb-[60px] acostaregular text-center">
           JOKER CAT ACADEMY
         </div>
-        <div className="container grid grid-cols-4 gap-5">
+        <div className="container grid grid-cols-4 gap-5 mb-10">
           {jcaData.map((item, i) => (
             <div key={i} className="jca_bg rounded-[10px] overflow-hidden">
               <div className="">
@@ -56,6 +56,16 @@ export const JokerCatAcademy = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center space-x-4 mb-[160px]">
+          <div className="flex items-center space-x-4  text-xl leading-[30px]">
+            <div className="text-[#004AAD]">« Previous</div>
+            <div className="text-[#004AAD]">1</div>
+          </div>
+          <div className="flex items-center space-x-4 text-xl leading-[30px]">
+            <div className="tg">2</div>
+            <div className="tg">Next »</div>
+          </div>
         </div>
       </div>
     </div>
