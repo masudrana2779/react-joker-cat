@@ -1,0 +1,48 @@
+.container {
+  max-width: 1170px !important;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.bg_gradient {
+  background: linear-gradient(to right, #474ef8, #f4c5ca);
+}
+
+.banner_bg {
+  background: linear-gradient(to top, #290e60, #480c97);
+}
+
+.bgl {
+  background: linear-gradient(to right, #474ef8, #f4c5ca);
+}
+
+/* src/styles.css */
+.gradient-border {
+  position: relative;
+  z-index: 1;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: -1px; /* Adjust based on your border width */
+  left: -1px; /* Adjust based on your border width */
+  right: -1px; /* Adjust based on your border width */
+  bottom: -1px; /* Adjust based on your border width */
+  background: linear-gradient(
+    90deg,
+    #1c23bf,
+    #eda7ad
+  ); /* Adjust gradient colors */
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.gradient-border > .content {
+  position: relative;
+  z-index: 1;
+  background: #fff; /* Adjust background color */
+  border-radius: inherit;
+  padding: 1rem; /* Adjust padding */
+}
