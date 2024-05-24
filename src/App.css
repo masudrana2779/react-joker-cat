@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+.bgColor {
+  background: #190d3f;
+}
+
 .bg_gradient {
   background: linear-gradient(to right, #474ef8, #f4c5ca);
 }
