@@ -1,4 +1,5 @@
 import Banner from "../../Banner/Banner";
+import { JokerCatAcademy } from "../../JokerCatAcademy/JokerCatAcademy";
 import Nav from "../../Nav/Nav";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <Nav />
         <Banner />
       </div>
+      <JokerCatAcademy />
     </>
   );
 };

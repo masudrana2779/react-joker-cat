@@ -20,7 +20,7 @@ const Nav = () => {
             </Link>
           </div>
           <div className="hidden md:flex items-center uppercase space-x-4 text-xl leading-5 font-bold">
-            <NavLink to={"/"} className="text-gradient">
+            <NavLink to={"/"} className="tg">
               roadmap
             </NavLink>
             <NavLink to={"#"} className="text-white opacity-70 border-b pb-1">
@@ -29,13 +29,13 @@ const Nav = () => {
             <NavLink href="#" className="text-white opacity-70 border-b pb-1">
               partners
             </NavLink>
-            <NavLink href="#" className="text-gradient">
+            <NavLink href="#" className="tg">
               Chart
             </NavLink>
-            <NavLink href="#" className="text-gradient">
+            <NavLink href="#" className="tg">
               Jcat Swap
             </NavLink>
-            <NavLink href="#" className="text-gradient">
+            <NavLink href="#" className="tg">
               Jcat Academy
             </NavLink>
             <div className="flex space-x-2 items-center">

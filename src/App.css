@@ -13,8 +13,12 @@
   background: linear-gradient(to right, #474ef8, #f4c5ca);
 }
 
-.banner_bg {
-  background: linear-gradient(to top, #290e60, #480c97);
+.jca_bg {
+  background: linear-gradient(
+    to right,
+    rgba(68, 77, 249, 0.1) 0%,
+    rgba(245, 198, 202, 0.1) 100%
+  );
 }
 
 .bgl {

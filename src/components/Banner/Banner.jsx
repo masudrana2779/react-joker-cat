@@ -38,7 +38,7 @@ const Banner = () => {
             <div className="text-[50px] leading-[65px] text-white uppercase text-center mb-[30px] acostaregular">
               JOKER CAT
             </div>
-            <div className="text-gradient  text-center text-2xl font-medium leading-[37px] mb-10">
+            <div className="tg  text-center text-2xl font-medium leading-[37px] mb-10">
               I am entering my joker phase..
             </div>
 
@@ -93,7 +93,7 @@ const Banner = () => {
             <div className="flex justify-center mb-5">
               <img src={item.icon} alt="icon" />
             </div>
-            <div className="text-center text-gradient text-[26px] leading-[31px] font-bold">
+            <div className="text-center tg text-[26px] leading-[31px] font-bold">
               {item.title}
             </div>
           </div>
