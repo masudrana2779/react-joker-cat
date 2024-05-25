@@ -1,3 +1,5 @@
+import { Element } from "react-scroll";
+
 const Tokenomics = () => {
   const tokenomicsData = [
     {
@@ -14,36 +16,38 @@ const Tokenomics = () => {
     },
   ];
   return (
-    <div className="bgColor">
-      <div className="container grid grid-cols-2 justify-between items-center pb-[160px]">
-        <div className="">
-          {tokenomicsData.map((item, i) => (
-            <div key={i} className="">
-              <div className="text-white acostaregular text-[42px] leading-[58px] mb-[20px]">
-                {item.title}
+    <Element name="Tokenomics">
+      <div className="bgColor pt-[160px]">
+        <div className="container grid grid-cols-2 justify-between items-center">
+          <div className="">
+            {tokenomicsData.map((item, i) => (
+              <div key={i} className="">
+                <div className="text-white acostaregular text-[42px] leading-[58px] mb-[20px]">
+                  {item.title}
+                </div>
+                <ul>
+                  {item.listItems.map((listItem, l) => (
+                    <li key={l} className="mb-[10px]">
+                      <div className="flex items-center">
+                        <div className="mr-4">
+                          <img src={listItem.icon} alt="img" />
+                        </div>
+                        <div className="font-bold text-white text-[24px] leading-10">
+                          {listItem.list}
+                        </div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul>
-                {item.listItems.map((listItem, l) => (
-                  <li key={l} className="mb-[10px]">
-                    <div className="flex items-center">
-                      <div className="mr-4">
-                        <img src={listItem.icon} alt="img" />
-                      </div>
-                      <div className="font-bold text-white text-[24px] leading-10">
-                        {listItem.list}
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-        <div className="">
-          <img src="/img/Tokenomics.png" alt="" />
+            ))}
+          </div>
+          <div className="">
+            <img src="/img/Tokenomics.png" alt="" />
+          </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

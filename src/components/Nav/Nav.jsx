@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 import NavbarTopSocial from "./NavbarTopSocial";
 import { FaCat, FaDollarSign } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,24 +20,42 @@ const Nav = () => {
             </Link>
           </div>
           <div className="hidden md:flex items-center uppercase space-x-4 text-xl leading-5 font-bold">
-            <NavLink to={"/"} className="tg">
+            <Link
+              to="Roadmap"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="tg cursor-pointer"
+            >
               roadmap
-            </NavLink>
-            <NavLink to={"#"} className="text-white opacity-70 border-b pb-1">
+            </Link>
+            <Link
+              to="Tokenomics"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="text-white cursor-pointer opacity-70 border-b pb-1"
+            >
               tokenomics
-            </NavLink>
-            <NavLink href="#" className="text-white opacity-70 border-b pb-1">
+            </Link>
+            <Link
+              to="Partner"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="text-white cursor-pointer opacity-70 border-b pb-1"
+            >
               partners
-            </NavLink>
-            <NavLink href="#" className="tg">
+            </Link>
+            <Link href="#" className="tg cursor-pointer">
               Chart
-            </NavLink>
-            <NavLink href="#" className="tg">
+            </Link>
+            <Link href="#" className="tg cursor-pointer">
               Jcat Swap
-            </NavLink>
-            <NavLink href="#" className="tg">
+            </Link>
+            <Link href="#" className="tg cursor-pointer">
               Jcat Academy
-            </NavLink>
+            </Link>
             <div className="flex space-x-2 items-center">
               <Link
                 to={"/"}

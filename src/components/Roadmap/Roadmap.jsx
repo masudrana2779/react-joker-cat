@@ -1,3 +1,5 @@
+import { Element } from "react-scroll";
+
 const Roadmap = () => {
   const roadmapData = [
     {
@@ -45,36 +47,38 @@ const Roadmap = () => {
     },
   ];
   return (
-    <div>
-      <div className="pt-[100px] bgColor pb-[160px]">
-        <div className="text-[42px] leading-[58px] text-white mb-[60px] acostaregular text-center">
-          Roadmap
-        </div>
-        <div className="container grid grid-cols-3 gap-[110px]">
-          {roadmapData.map((item, i) => (
-            <div key={i} className="">
-              <div className="text-white acostaregular text-[30px] leading-[38px] mb-[30px]">
-                {item.title}
+    <Element name="Roadmap">
+      <div>
+        <div className="pt-[100px] bgColor">
+          <div className="text-[42px] leading-[58px] text-white mb-[60px] acostaregular text-center">
+            Roadmap
+          </div>
+          <div className="container grid grid-cols-3 gap-[110px]">
+            {roadmapData.map((item, i) => (
+              <div key={i} className="">
+                <div className="text-white acostaregular text-[30px] leading-[38px] mb-[30px]">
+                  {item.title}
+                </div>
+                <ul>
+                  {item.listItems.map((listItem, l) => (
+                    <li key={l} className="mb-[10px]">
+                      <div className="flex items-center">
+                        <div className="mr-4">
+                          <img src={listItem.icon} alt="img" />
+                        </div>
+                        <div className="roboto font-semibold text-white text-base leading-6">
+                          {listItem.list}
+                        </div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul>
-                {item.listItems.map((listItem, l) => (
-                  <li key={l} className="mb-[10px]">
-                    <div className="flex items-center">
-                      <div className="mr-4">
-                        <img src={listItem.icon} alt="img" />
-                      </div>
-                      <div className="roboto font-semibold text-white text-base leading-6">
-                        {listItem.list}
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

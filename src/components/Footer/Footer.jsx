@@ -1,11 +1,21 @@
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdAlternateEmail } from "react-icons/md";
+import { TfiAngleUp } from "react-icons/tfi";
 import { Link } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
   return (
-    <div className="bg-[#140933] pt-[100px] pb-10">
+    <div className="bg-[#140933] pt-[100px] pb-10 relative">
+      <div
+        className="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer absolute bottom-10 right-10"
+        onClick={() => scroll.scrollToTop()}
+      >
+        <div className="tg">
+          <TfiAngleUp />
+        </div>
+      </div>
       <div className="max-w-[1170px] mx-auto flex justify-between px-[15px] w-full mb-16">
         <div className="w-full max-w-[256px]">
           <div className=" flex items-center space-x-4 mb-5">
