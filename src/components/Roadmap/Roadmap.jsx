@@ -46,7 +46,7 @@ const Roadmap = () => {
   ];
   return (
     <div>
-      <div className="pt-[100px] pb-[160px]">
+      <div className="pt-[100px] bgColor pb-[160px]">
         <div className="text-[42px] leading-[58px] text-white mb-[60px] acostaregular text-center">
           Roadmap
         </div>

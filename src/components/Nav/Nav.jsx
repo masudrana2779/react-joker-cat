@@ -10,7 +10,7 @@ const Nav = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <>
+    <div className="bgColor">
       <nav className="top-0 left-0 w-full">
         <NavbarTopSocial />
         <div className="container max-w-[1170px] mx-auto flex justify-between items-center">
@@ -110,7 +110,7 @@ const Nav = () => {
           </div>
         )}
       </nav>
-    </>
+    </div>
   );
 };
 

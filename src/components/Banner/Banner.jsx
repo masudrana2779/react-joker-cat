@@ -26,8 +26,8 @@ const Banner = () => {
   ];
 
   return (
-    <>
-      <div className="container flex  justify-between pt-[92px] pb-[137px] pl-[116px] pr-[68px]">
+    <div className="bgColor pb-[100px] pt-[92px]">
+      <div className="container  flex  justify-between  pb-[137px] pl-[116px] pr-[68px]">
         <div className="">
           <div className="">
             <img src="/img/banner.png" alt="img" />
@@ -99,7 +99,7 @@ const Banner = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
