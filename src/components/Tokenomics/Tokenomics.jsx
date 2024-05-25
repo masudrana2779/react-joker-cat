@@ -18,7 +18,7 @@ const Tokenomics = () => {
       <div className="">
         {tokenomicsData.map((item, i) => (
           <div key={i} className="">
-            <div className="text-white acostaregular text-[30px] leading-[38px] mb-[30px]">
+            <div className="text-white acostaregular text-[42px] leading-[58px] mb-[20px]">
               {item.title}
             </div>
             <ul>
