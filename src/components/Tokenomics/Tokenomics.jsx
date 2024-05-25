@@ -17,12 +17,12 @@ const Tokenomics = () => {
   ];
   return (
     <Element name="Tokenomics">
-      <div className="bgColor pt-[160px]">
-        <div className="container grid grid-cols-2 justify-between items-center">
-          <div className="">
+      <div className="bgColor pt-[60px] md:pt-[160px]">
+        <div className="container grid grid-cols-1  md:grid-cols-2 justify-between items-center">
+          <div className="mb-10 md:mb-0">
             {tokenomicsData.map((item, i) => (
               <div key={i} className="">
-                <div className="text-white acostaregular text-[42px] leading-[58px] mb-[20px]">
+                <div className="text-white acostaregular text-[28px] leading-[44px] md:text-[42px] md:leading-[58px] mb-5 md:mb-0">
                   {item.title}
                 </div>
                 <ul>
@@ -32,7 +32,7 @@ const Tokenomics = () => {
                         <div className="mr-4">
                           <img src={listItem.icon} alt="img" />
                         </div>
-                        <div className="font-bold text-white text-[24px] leading-10">
+                        <div className="font-bold text-white text-[18px] md:text-[24px] leading-7 md:leading-10">
                           {listItem.list}
                         </div>
                       </div>
