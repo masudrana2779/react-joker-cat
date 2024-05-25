@@ -46,7 +46,7 @@ const Roadmap = () => {
   ];
   return (
     <div>
-      <div className="pt-[100px] pb-[130px]">
+      <div className="pt-[100px] pb-[160px]">
         <div className="text-[42px] leading-[58px] text-white mb-[60px] acostaregular text-center">
           Roadmap
         </div>
@@ -63,7 +63,7 @@ const Roadmap = () => {
                       <div className="mr-4">
                         <img src={listItem.icon} alt="img" />
                       </div>
-                      <div className="roboto text-white text-base leading-6">
+                      <div className="roboto font-semibold text-white text-base leading-6">
                         {listItem.list}
                       </div>
                     </div>
