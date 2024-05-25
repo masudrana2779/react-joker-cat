@@ -26,8 +26,8 @@ const Banner = () => {
   ];
 
   return (
-    <div className="bgColor pb-[100px] pt-[92px]">
-      <div className="container  flex  justify-between  pb-[137px] pl-[116px] pr-[68px]">
+    <div className="bgColor pb-[100px] pt-10 md:pt-[92px]">
+      <div className="container block md:flex  justify-between  pb-10 md:pb-[137px] pl-5 pr-5 md:pl-[116px] md:pr-[68px]">
         <div className="">
           <div className="">
             <img src="/img/banner.png" alt="img" />
@@ -35,7 +35,7 @@ const Banner = () => {
         </div>
         <div className="">
           <div className="pt-6">
-            <div className="text-[50px] leading-[65px] text-white uppercase text-center mb-[30px] acostaregular">
+            <div className="text-[36px] md:text-[50px] leading-[65px] text-white uppercase text-center mb-[30px] acostaregular">
               JOKER CAT
             </div>
             <div className="tg  text-center text-2xl font-medium leading-[37px] mb-10">
@@ -84,7 +84,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1116px] mx-auto px-5 grid grid-cols-4 gap-5">
+      <div className="max-w-[1116px] mx-auto px-5 grid md:grid-cols-4 grid-cols-2 gap-5">
         {iconData.map((item, i) => (
           <div
             className="pt-5 px-9 pb-[50px] border-[3px] border-[#2E2159] rounded-[10px]"
@@ -93,7 +93,7 @@ const Banner = () => {
             <div className="flex justify-center mb-5">
               <img src={item.icon} alt="icon" />
             </div>
-            <div className="text-center tg text-[26px] leading-[31px] font-bold">
+            <div className="text-center tg text-[16px] md:text-[26px] leading-[24px] md:leading-[31px] font-bold">
               {item.title}
             </div>
           </div>

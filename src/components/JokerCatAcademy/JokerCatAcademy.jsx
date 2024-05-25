@@ -29,11 +29,11 @@ export const JokerCatAcademy = () => {
   ];
   return (
     <div>
-      <div className="bg-[#140933] pt-[100px] pb-[130px]">
-        <div className="text-[42px] leading-[58px] text-white mb-[60px] acostaregular text-center">
+      <div className="bg-[#140933] pt-[50px] pb-[60px] md:pt-[100px] md:pb-[130px]">
+        <div className="text-[28px] leading-[44px] md:text-[42px] md:leading-[58px] text-white mb-[60px] acostaregular text-center">
           JOKER CAT ACADEMY
         </div>
-        <div className="container grid grid-cols-4 gap-5 mb-10">
+        <div className="container grid grid-cols-2 md:grid-cols-4 gap-5 mb-10">
           {jcaData.map((item, i) => (
             <div key={i} className="jca_bg rounded-[10px] overflow-hidden">
               <div className="">
@@ -58,7 +58,7 @@ export const JokerCatAcademy = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center space-x-4 mb-[160px]">
+        <div className="flex justify-center space-x-4 mb-[60px] md:mb-[160px]">
           <div className="flex items-center space-x-4  text-xl leading-[30px]">
             <div className="text-[#004AAD]">« Previous</div>
             <div className="text-[#004AAD]">1</div>
@@ -68,12 +68,12 @@ export const JokerCatAcademy = () => {
             <div className="tg">Next »</div>
           </div>
         </div>
-        <div className="container flex justify-between">
-          <div className="pt-[14px]">
+        <div className="container block md:flex justify-between">
+          <div className="pt-[14px] md:mb-0 mb-16">
             <img src="/img/kittencasino.png" alt="" />
           </div>
-          <div className=" max-w-[630px] w-full  -mr-[116px]">
-            <div className="text-[42px] leading-[58px] text-white mb-[6px] acostaregular text-center">
+          <div className=" max-w-[630px] w-full  md:-mr-[116px]">
+            <div className="text-[28px] leading-[44px] md:text-[42px] md:leading-[58px] text-white mb-[6px] acostaregular text-center">
               CRYPTO GAMES PARTNERSHIP
             </div>
             <div className="flex justify-center mb-[45px]">

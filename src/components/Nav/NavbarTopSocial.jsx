@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const NavbarTopSocial = () => {
   return (
-    <div className="container flex justify-between items-center py-10 px-[219px]">
+    <div className="container hidden md:flex justify-between items-center py-10 px-[219px]">
       <div className="flex items-center space-x-4">
         <Link
           to={"/"}

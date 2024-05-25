@@ -49,14 +49,14 @@ const Roadmap = () => {
   return (
     <Element name="Roadmap">
       <div>
-        <div className="pt-[100px] bgColor">
-          <div className="text-[42px] leading-[58px] text-white mb-[60px] acostaregular text-center">
+        <div className="pt-[50px] md:pt-[100px] bgColor">
+          <div className="text-[28px] leading-[44px] md:text-[42px] md:leading-[58px] text-white mb-[60px] acostaregular text-center">
             Roadmap
           </div>
-          <div className="container grid grid-cols-3 gap-[110px]">
+          <div className="container grid grid-cols-1 md:grid-cols-3 gap-[50px] md:gap-[110px]">
             {roadmapData.map((item, i) => (
               <div key={i} className="">
-                <div className="text-white acostaregular text-[30px] leading-[38px] mb-[30px]">
+                <div className="text-white acostaregular text-[22px] leading-[28px] md:text-[30px] md:leading-[38px] mb-[20px] md:mb-[30px]">
                   {item.title}
                 </div>
                 <ul>

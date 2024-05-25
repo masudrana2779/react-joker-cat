@@ -11,9 +11,9 @@ const Nav = () => {
   };
   return (
     <div className="bgColor">
-      <nav className="top-0 left-0 w-full">
+      <nav className="">
         <NavbarTopSocial />
-        <div className="container max-w-[1170px] mx-auto flex justify-between items-center">
+        <div className="container max-w-[1170px] mx-auto flex justify-between items-center p-4">
           <div className="">
             <Link to={"/"}>
               <img src="/img/logo.png" alt="logo" />
@@ -101,30 +101,64 @@ const Nav = () => {
         </div>
         {isOpen && (
           <div className="md:hidden">
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
-            >
-              Home
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
-            >
-              About sd
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
-            >
-              Services
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
-            >
-              Contact
-            </a>
+            <div className="p-4 inline-flex flex-col uppercase space-y-4 text-xl leading-5 font-bold">
+              <Link
+                to="Roadmap"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="tg cursor-pointer"
+              >
+                roadmap
+              </Link>
+              <Link
+                to="Tokenomics"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="text-white cursor-pointer opacity-70 border-b pb-1"
+              >
+                tokenomics
+              </Link>
+              <Link
+                to="Partner"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="text-white cursor-pointer opacity-70 border-b pb-1"
+              >
+                partners
+              </Link>
+              <Link href="#" className="tg cursor-pointer">
+                Chart
+              </Link>
+              <Link href="#" className="tg cursor-pointer">
+                Jcat Swap
+              </Link>
+              <Link href="#" className="tg cursor-pointer">
+                Jcat Academy
+              </Link>
+              <div className="flex space-x-2 items-center">
+                <Link
+                  to={"/"}
+                  className="text-white flex text-[18px] leading-[26px] font-medium  items-center space-x-2 py-2 px-5 rounded-full bg_gradient"
+                >
+                  <span>
+                    <FaCat />
+                  </span>
+                  <span>game</span>
+                </Link>
+                <Link
+                  to={"/"}
+                  className="text-white flex text-[18px] leading-[26px] font-medium  items-center space-x-2 py-2 px-5 rounded-full bg_gradient"
+                >
+                  <span>
+                    <FaDollarSign />
+                  </span>
+                  <span>Buy here</span>
+                </Link>
+              </div>
+            </div>
           </div>
         )}
       </nav>
