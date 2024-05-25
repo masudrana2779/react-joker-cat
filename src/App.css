@@ -40,8 +40,8 @@
   bottom: -1px; /* Adjust based on your border width */
   background: linear-gradient(
     90deg,
-    #1c23bf,
-    #eda7ad
+    #444cf9,
+    #f5c6ca
   ); /* Adjust gradient colors */
   z-index: -1;
   border-radius: inherit;
@@ -50,7 +50,5 @@
 .gradient-border > .content {
   position: relative;
   z-index: 1;
-  background: #fff; /* Adjust background color */
-  border-radius: inherit;
-  padding: 1rem; /* Adjust padding */
+  background: linear-gradient(to right, rgb(54 22 115), rgb(98 64 104));
 }

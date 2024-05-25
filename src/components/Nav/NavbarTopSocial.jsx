@@ -42,7 +42,7 @@ const NavbarTopSocial = () => {
         </Link>
       </div>
       <div className="gradient-border">
-        <div className="flex items-center p-2 bg_gradient cursor-pointer">
+        <div className="flex items-center content p-2 contect cursor-pointer">
           <div className="">
             <img src="/img/eng.png" alt="img" />
           </div>

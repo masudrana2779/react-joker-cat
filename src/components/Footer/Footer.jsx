@@ -111,19 +111,21 @@ const Footer = () => {
           <div className="text-white text-[25px] leading-[25px] font-bold mb-[22px]">
             Join Jcat Academy
           </div>
-          <div className="text-base text-white mb-5">
+          <div className="text-base text-white mb-10">
             Sign up for our newsletter to keep updated about Joker Cat.
           </div>
           <div className="">
-            <form action="#">
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="text-base text-white bg-transparent border-b border-[#E95455] outline-none shadow-none w-full mb-5"
-              />
+            <form action="#" className="flex items-start justify-between">
+              <div className="w-full pr-[18px]">
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="text-base text-white bg-transparent border-b border-[#E95455] outline-none shadow-none w-full space-x-[18px]"
+                />
+              </div>
               <button
                 type="submit"
-                className="border border-[#E23125] rounded-full text-[#E23125] py-[10px] px-[20px] hover:bg-[#E23125] hover:text-white transition-all duration-200 text-base leading-4"
+                className="border border-[#E23125] rounded-full text-[#E23125] py-[10px] px-[20px] hover:bg-[#E23125] hover:text-white transition-all duration-200 text-base leading-4 min-w-[126px] -mt-10"
               >
                 Sign Me Up
               </button>
