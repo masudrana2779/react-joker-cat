@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-[#140933] py-10">
-      <div className="max-w-[1140px] mx-auto flex justify-between px-4">
+      <div className="max-w-[1170px] mx-auto flex justify-between px-[15px]">
         <div className="w-full max-w-[256px]">
           <div className=" flex items-center space-x-4 mb-5">
             <div className="">
