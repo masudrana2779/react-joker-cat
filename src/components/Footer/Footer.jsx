@@ -1,3 +1,4 @@
+import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -43,7 +44,27 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full max-w-[158px]">sd</div>
+        <div className="w-full max-w-[158px]">
+          <div className="text-[18px] font-medium text-white leading-[18px] mb-[18px]">
+            Contact Info
+          </div>
+          <div className="">
+            <ul>
+              <li>
+                <Link
+                  target="_black"
+                  to={"/"}
+                  className="flex items-center space-x-4"
+                >
+                  <div className="">
+                    <FaXTwitter />
+                  </div>
+                  <div className="">@JokerJcat</div>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div className="w-full max-w-[391px]">sd</div>
       </div>
     </div>
