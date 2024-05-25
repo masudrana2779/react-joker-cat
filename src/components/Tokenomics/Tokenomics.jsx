@@ -14,7 +14,7 @@ const Tokenomics = () => {
     },
   ];
   return (
-    <div className="container grid grid-cols-2 justify-between  pb-[160px]">
+    <div className="container grid grid-cols-2 justify-between items-center pb-[160px]">
       <div className="">
         {tokenomicsData.map((item, i) => (
           <div key={i} className="">
@@ -28,7 +28,7 @@ const Tokenomics = () => {
                     <div className="mr-4">
                       <img src={listItem.icon} alt="img" />
                     </div>
-                    <div className="font-bold text-white text-base leading-6">
+                    <div className="font-bold text-white text-[24px] leading-10">
                       {listItem.list}
                     </div>
                   </div>

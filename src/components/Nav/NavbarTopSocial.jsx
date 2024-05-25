@@ -48,7 +48,7 @@ const NavbarTopSocial = () => {
           </div>
           <div className="px-6 text-white">EN</div>
           <div className="">
-            <img src="/img/right-angle.png" alt="img" />
+            <img src="/img/right-angle.svg" alt="img" />
           </div>
         </div>
       </div>
