@@ -16,8 +16,8 @@ const Footer = () => {
           <TfiAngleUp />
         </div>
       </div>
-      <div className="max-w-[1170px] mx-auto flex justify-between px-[15px] w-full mb-16">
-        <div className="w-full max-w-[256px]">
+      <div className="max-w-[1170px] mx-auto block md:flex justify-between px-[15px] w-full mb-16">
+        <div className="w-full max-w-[256px] mb-10 md:mb-0">
           <div className=" flex items-center space-x-4 mb-5">
             <div className="">
               <img src="/img/logo.png" alt="" />
@@ -29,7 +29,7 @@ const Footer = () => {
             liquidity 🚀
           </div>
         </div>
-        <div className="w-full max-w-[133px]">
+        <div className="w-full max-w-[133px] mb-10 md:mb-0">
           <div className="text-[18px] font-medium text-white leading-[18px] mb-[18px]">
             Documentation
           </div>
@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full max-w-[158px]">
+        <div className="w-full max-w-[158px] mb-10 md:mb-0">
           <div className="text-[18px] font-medium text-white leading-[18px] mb-[18px]">
             Contact Info
           </div>
@@ -107,7 +107,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="w-full max-w-[391px]">
+        <div className="w-full max-w-[391px] mb-10 md:mb-0">
           <div className="text-white text-[25px] leading-[25px] font-bold mb-[22px]">
             Join Jcat Academy
           </div>
