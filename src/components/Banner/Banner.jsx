@@ -42,7 +42,7 @@ const Banner = () => {
               I am entering my joker phase..
             </div>
 
-            <div className="flex space-x-20 justify-center items-center mb-10">
+            <div className="flex space-x-12 justify-center items-center mb-10">
               <Link
                 to={"/"}
                 className="text-white uppercase text-[18px] leading-[26px] font-medium flex items-center space-x-1 py-2 px-5 rounded-full bg_gradient"
