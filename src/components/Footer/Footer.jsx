@@ -125,7 +125,7 @@ const Footer = () => {
               </div>
               <button
                 type="submit"
-                className="border border-[#E23125] rounded-full text-[#E23125] py-[10px] px-[20px] hover:bg-[#E23125] hover:text-white transition-all duration-200 text-base leading-4 min-w-[126px] -mt-10"
+                className="border border-[#E23125] rounded-full text-[#E23125] py-[10px] px-[20px] hover:bg-[#E23125] hover:text-white transition-all duration-200 text-base leading-4 min-w-[126px] -mt-[33px]"
               >
                 Sign Me Up
               </button>
