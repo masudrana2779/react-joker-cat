@@ -63,7 +63,7 @@ const Roadmap = () => {
           <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-[50px] md:gap-[30px]">
             {roadmapData.map((item, i) => (
               <div key={i} className="">
-                <div className="text-white acostaregular text-xl leading-[28px] mb-[20px]">
+                <div className="text-white acostaregular text-xl leading-[38px] mb-[20px]">
                   {item.title} <br /> {item.subTitle}
                 </div>
                 <ul className="space-y-5">
