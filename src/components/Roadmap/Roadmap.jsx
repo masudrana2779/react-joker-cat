@@ -3,60 +3,52 @@ import { Element } from "react-scroll";
 const Roadmap = () => {
   const roadmapData = [
     {
-      title: "Phase one",
+      title: "Phase 1: ",
+      subTitle: "Meme Token Launch",
       listItems: [
-        { list: "Website & Socials Launch", icon: "/img/checked.svg" },
-        { list: "Marketing + Community Building", icon: "/img/checked.svg" },
-        { list: "PinkSale AMA", icon: "/img/checked.svg" },
-        { list: "TG & Twitter Raids", icon: "/img/checked.svg" },
-        { list: "Private Call Group Features", icon: "/img/checked.svg" },
-        { list: "Pinksale Fair Launch", icon: "/img/checked.svg" },
-        { list: "Dexscreener + Dexview Trending", icon: "/img/checked.svg" },
+        {
+          list: "Launch JCAT on Solana: Begin as a meme token to attract initial interest and community support.",
+          icon: "/img/checked.svg",
+        },
+        {
+          list: "Presale and Airdrop: Conduct a transparent presale and distribute airdrops to early supporters.",
+          icon: "/img/checked.svg",
+        },
       ],
     },
     {
-      title: "Phase one",
+      title: "Phase 2: ",
+      subTitle: "Ecosystem Development",
       listItems: [
-        { list: "Launch on Raydium", icon: "/img/checked.svg" },
-        { list: "CMC / CG Fast Track Listings", icon: "/img/checked.svg" },
-        { list: "Go live on Jupiter", icon: "/img/checked.svg" },
-        { list: "Trust Wallet Integration", icon: "/img/checked.svg" },
-        { list: "Listing on MEXC", icon: "/img/checked.svg" },
-        { list: "Listing on BitMart", icon: "/img/checked.svg" },
-        { list: "News/Blog on the website", icon: "/img/checked.svg" },
+        {
+          list: " JCAT Swap: Develop a decentralized exchange platform tailored for JCAT and other tokens.",
+          icon: "/img/checked.svg",
+        },
+        {
+          list: "Staking: Introduce staking mechanisms to reward long-term holders and secure the network.",
+          icon: "/img/checked.svg",
+        },
+        {
+          list: "Gaming Platform: Launch a gaming platform where users can play and earn JCAT.",
+          icon: "/img/checked.svg",
+        },
       ],
     },
     {
-      title: "Phase one",
+      title: "Phase 3:",
+      subTitle: "Transition to Full-Fledged Blockchain",
       listItems: [
         {
-          list: "Launch Online Crypto Casino Partnership",
+          list: "Blockchain Development: Begin the development of Joker Cat’s own blockchain, aiming for enhanced security, scalability, and functionality.",
           icon: "/img/checked.svg",
         },
         {
-          list: "Multi language website inc. Chinese",
+          list: "Integration and Expansion: Integrate various applications and expand the ecosystem to include more utilities and services",
           icon: "/img/checked.svg",
         },
         {
-          list: "Launch Strategic Partnership w/GotBit Hedge Fund",
+          list: "Community Governance: Implement a decentralized governance model to give the community a voice in the project’s direction and decisions.",
           icon: "/img/checked.svg",
-        },
-        {
-          list: "Launch Strategic Partnership with The Gari Network / Chingari App",
-          icon: "/img/checked.svg",
-        },
-        { list: "Launch $CATNIP incentive token", icon: "/img/checked.svg" },
-        {
-          list: "Launch Joker cat DAPP (including staking+farming+fiat onramp)",
-          icon: "/img/checked.svg",
-        },
-        { list: "Unveil NFT Collection", icon: "/img/unchecked.svg" },
-        { list: "Mint first 200 NFTs", icon: "/img/unchecked.svg" },
-        { list: "Reach $100m Market Cap", icon: "/img/unchecked.svg" },
-        { list: "Listing on Tier 1 Exchange", icon: "/img/unchecked.svg" },
-        {
-          list: "Become the first cat token to reach $1B Market Cap",
-          icon: "/img/unchecked.svg",
         },
       ],
     },
@@ -68,17 +60,17 @@ const Roadmap = () => {
           <div className="text-[28px] leading-[44px] md:text-[42px] md:leading-[58px] text-white mb-[60px] acostaregular text-center">
             Roadmap
           </div>
-          <div className="container grid grid-cols-1 md:grid-cols-3 gap-[50px] md:gap-[50px]">
+          <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-[50px] md:gap-[30px]">
             {roadmapData.map((item, i) => (
               <div key={i} className="">
-                <div className="text-white acostaregular text-[22px] leading-[28px] md:text-[30px] md:leading-[38px] mb-[20px] md:mb-[30px]">
-                  {item.title}
+                <div className="text-white acostaregular text-xl leading-[28px] mb-[20px]">
+                  {item.title} <br /> {item.subTitle}
                 </div>
-                <ul>
+                <ul className="space-y-5">
                   {item.listItems.map((listItem, l) => (
-                    <li key={l} className="mb-[10px]">
-                      <div className="flex items-center">
-                        <div className="mr-4 min-w-[21px]">
+                    <li key={l} className="">
+                      <div className="flex">
+                        <div className="mr-4 min-w-[21px] mt-1">
                           <img src={listItem.icon} alt="img" />
                         </div>
                         <div className="roboto font-semibold text-white text-base leading-6">
